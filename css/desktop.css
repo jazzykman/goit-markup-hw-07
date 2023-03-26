@@ -1,0 +1,41 @@
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1158px;
+  }
+  .address-list :not(:last-child) {
+    margin-right: 40px;
+  }
+  .address-list {
+    flex-direction: row;
+    margin: 0 auto;
+  }
+
+  .header-links {
+    padding: 24px 0px;
+  }
+  .strategy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #f4f4fd;
+    border-radius: 4px;
+    height: 112px;
+    margin-bottom: 8px;
+  }
+  .section-ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .desc-titles {
+    font-weight: 500;
+    line-height: 1.2;
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+  .section-items {
+    margin-right: 24px;
+    width: 264px;
+  }
+}

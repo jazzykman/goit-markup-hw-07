@@ -1,0 +1,32 @@
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+  .address-list {
+    flex-direction: column;
+    margin: 0;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .phone-number {
+    margin-top: 4px;
+    padding-bottom: 10px;
+    padding-top: 0;
+  }
+  .address-list {
+    font-size: 12px;
+    line-height: 1.3333;
+  }
+  .mail {
+    padding-bottom: 0;
+    padding-top: 24px;
+  }
+  .section-ul {
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+  .section-items {
+    width: calc((100% - 24px) / 2);
+  }
+}
