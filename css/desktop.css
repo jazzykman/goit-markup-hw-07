@@ -38,4 +38,50 @@
     margin-right: 24px;
     width: 264px;
   }
+  .workers-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .employees {
+    background-color: white;
+    padding-bottom: 32px;
+  }
+  .employees:not(:last-child) {
+    margin-right: 24px;
+  }
+  .workers-media {
+    gap: 16px;
+  }
+  .socials-links:not(:last-child) {
+    margin-right: 24px;
+  }
+  .company-list {
+    display: flex;
+  }
+  .company-item:not(:last-child) {
+    margin-right: 24px;
+  }
+  .footer-div {
+    display: flex;
+  }
+  .subscribe-container {
+    display: flex;
+  }
+  .footer-full-logo {
+    display: inline-block;
+  }
+  .footer-title {
+    margin-right: 120px;
+  }
+  .footer-socials {
+    display: block;
+    flex-direction: column;
+  }
+  .footer-form {
+    margin-left: 80px;
+  }
+  .subscribe-button {
+    margin-left: 24px;
+  }
 }

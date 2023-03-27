@@ -177,17 +177,14 @@ img {
 .section-about {
   padding: 120px 0;
 }
-.section-ul {
-}
 .strategy {
   display: none;
 }
-
-.section-items {
-}
-
 @media screen and (max-width: 767px) {
   .section-items:not(:last-child) {
+    margin-bottom: 72px;
+  }
+  .employees:not(:last-child) {
     margin-bottom: 72px;
   }
 }
@@ -205,6 +202,9 @@ img {
 @media screen and (max-width: 1199px) {
   .desc-titles {
     margin-bottom: 8px;
+  }
+  .section-three {
+    display: none;
   }
 }
 
@@ -227,6 +227,7 @@ img {
 .section-three {
   padding-bottom: 120px;
 }
+
 .introdution {
   font-weight: 700;
   font-size: 36px;
@@ -238,15 +239,13 @@ img {
 .workers-list {
   display: flex;
   justify-content: center;
-  align-items: center;
+  flex-wrap: wrap;
 }
 .employees {
   background-color: white;
   padding-bottom: 32px;
 }
-.employees:not(:last-child) {
-  margin-right: 24px;
-}
+
 .workers {
   display: flex;
   align-items: center;
@@ -271,7 +270,14 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 16px;
+}
+@media screen and (max-width: 767px) {
+  .workers-media {
+    gap: 24px;
+  }
+  .employees {
+    max-width: 264px;
+  }
 }
 .workers-activity {
   color: #434455;
@@ -295,9 +301,7 @@ img {
   justify-content: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.socials-links:not(:last-child) {
-  margin-right: 24px;
-}
+
 .socials-links:focus,
 .socials-links:hover {
   background-color: #404bbf;
@@ -315,9 +319,7 @@ img {
   text-align: center;
   margin-bottom: 72px;
 }
-.company-list {
-  display: flex;
-}
+
 .company-icons {
   fill: #8e8f99;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -329,9 +331,17 @@ img {
 .company-item {
   display: inline-flex;
 }
-.company-item:not(:last-child) {
-  margin-right: 24px;
+@media screen and (max-width: 767px) {
+  .company-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-basis: calc((100% - 16px) / 2);
+    column-gap: 16px;
+    row-gap: 72px;
+  }
 }
+
 .company-links {
   display: flex;
   align-items: center;
@@ -356,17 +366,15 @@ img {
 }
 .footer {
   background: #2e2f42;
-  padding-bottom: 100px;
-  padding-top: 100px;
+  padding-bottom: 96px;
+  padding-top: 96px;
 }
 .footer-div {
   display: flex;
-}
-.footer-title {
-  margin-right: 120px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .footer-full-logo {
-  display: inline-block;
   font-family: "Raleway" sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -375,6 +383,42 @@ img {
   text-transform: uppercase;
   color: #f4f4fd;
   margin-bottom: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 767px) {
+  .footer-above-media {
+    display: flex;
+    justify-content: center;
+  }
+  .footer-text {
+    margin-bottom: 72px;
+  }
+  .footer-icons {
+    column-gap: 16px;
+    margin-bottom: 72px;
+  }
+  .footer-socials {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .subscribe-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .action-advice {
+    display: flex;
+    justify-content: center;
+  }
+  .mail-input {
+    margin-bottom: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
 }
 .footer-logo {
   font-family: "Raleway";
@@ -391,10 +435,7 @@ img {
   color: #e7e9fc;
   width: 264px;
 }
-.footer-socials {
-  display: block;
-  flex-direction: column;
-}
+
 .footer-links {
   display: inline-flex;
   border-radius: 50%;
@@ -410,6 +451,7 @@ img {
 .footer-links:hover {
   background: #31d0aa;
 }
+
 .footer-above-media {
   font-weight: 500;
   font-size: 16px;
@@ -424,29 +466,24 @@ img {
   color: #ffffff;
   margin-bottom: 16px;
 }
-.subscribe-container {
-  display: flex;
-}
+
 .mail-input {
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   background: #2e2f42;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   color: #ffffff;
-  width: 264px;
-
+  width: 100%;
   padding-left: 16px;
 }
 .mail-input::placeholder {
   color: rgba(255, 255, 255, 0.6);
   font-weight: 400;
   font-size: 12px;
-  line-height: 24px;
+  line-height: 2;
   letter-spacing: 0.04em;
 }
-.footer-form {
-  margin-left: 80px;
-}
+
 .subscribe-button {
   background: #4d5ae5;
   font-weight: 500;
@@ -462,7 +499,7 @@ img {
   display: flex;
   align-items: center;
   text-align: center;
-  margin-left: 24px;
+
   cursor: pointer;
   position: relative;
   transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1),
