@@ -77,4 +77,8 @@
   .mail-input {
     margin-right: 24px;
   }
+  .desc-titles {
+    display: flex;
+    justify-content: start;
+  }
 }
