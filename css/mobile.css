@@ -10,5 +10,6 @@
 @media screen and (max-width: 479px) {
   .modal {
     width: calc(100% - 2 * 15px);
+    height: auto;
   }
 }
