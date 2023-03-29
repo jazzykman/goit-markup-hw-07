@@ -60,7 +60,6 @@ img {
 }
 .header-container {
   display: flex;
-  justify-content: space-between;
 }
 .navigation {
   display: flex;
@@ -106,6 +105,14 @@ img {
   .address-list {
     display: none;
   }
+  .header-container {
+    display: block;
+  }
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 .header-list :not(:last-child) {
   margin-right: 40px;
@@ -132,29 +139,47 @@ img {
   color: #434455;
 }
 /* --------------------------------Hero----------------------- */
-.hero-section {
-  padding-top: 188px;
-  padding-bottom: 188px;
-  background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
-    url(../images/hero-photo.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  max-width: 1440px;
+@media screen and (max-width: 767px) {
+  .hero-section {
+    padding: 112px 56px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-bg-mob-1x.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .hero-section {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero-bg-mob-2x.jpg);
+    }
+  }
 }
 
 .hero-title {
   font-weight: 700;
-  font-size: 56px;
-  line-height: 1.07;
+  font-size: 36px;
+  line-height: 40px;
   text-align: center;
   color: #ffffff;
-  width: 494px;
+  width: 318px;
   margin: 0 auto 48px;
 }
+@media screen and (max-width: 767px) {
+  .hero-title {
+    max-width: 320px;
+    width: 100%;
+  }
+}
+
 .hero-btn {
   font-weight: 500;
   font-size: 16px;
@@ -373,8 +398,6 @@ img {
   background: #2e2f42;
   padding-bottom: 96px;
   padding-top: 96px;
-}
-.footer-div {
 }
 .footer-full-logo {
   font-family: "Raleway" sans-serif;

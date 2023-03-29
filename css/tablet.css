@@ -12,8 +12,39 @@
   .header-button {
     display: none;
   }
+  .hero-title {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
+    color: #ffffff;
+    width: 494px;
+    margin: 0 auto 48px;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero-section {
+    padding: 112px 56px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-tab-bg-1x.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .hero-section {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero-tablet-bg-2x.jpg);
+    }
+  }
   .phone-number {
     margin-top: 4px;
     padding-bottom: 10px;
