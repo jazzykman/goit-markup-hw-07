@@ -27,55 +27,67 @@
     <!-- header -->
     <header class="header">
       <div class="container header-container">
-        <nav class="navigation">
+        <div class="header-mobile second-header-div">
           <a href="./index.html" class="header-logo link"
             ><span class="logo-first-part">Web</span>Studio</a
           >
-          <ul class="header-list list">
-            <li class="underline-item">
-              <a
-                href="./index.html"
-                class="header-links link navigation-links underline studio-link"
-                >Studio</a
-              >
-            </li>
-            <li>
-              <a
-                href="./portfolio.html"
-                class="header-links link navigation-links"
-                rel="noreferrer noopener nofollower"
-                >Portfolio</a
-              >
-            </li>
-            <li>
-              <a href="" class="header-links link navigation-links">Contacts</a>
-            </li>
-          </ul>
-          <button type="button" class="header-button">
+          <button type="button" class="header-button js-open-menu">
             <svg width="32" height="22" class="hamburger-svg">
               <use href="./images/sprite.svg#icon-hamburger"></use>
             </svg>
           </button>
-        </nav>
-
-        <address class="address">
-          <ul class="list address-list">
-            <li>
-              <a
-                href="mailto:info@devstudio.com"
-                class="mail-tel header-links link mail"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li>
-              <a
-                href="tel:+110001111111"
-                class="mail-tel header-links link phone-number"
-                >+11 (000) 111-11-11</a
-              >
-            </li>
-          </ul>
-        </address>
+          <div class="hamburger js-menu-container">
+            <button class="modal-button js-close-menu" id="mobile-menu">
+              <svg class="close-tag" width="8px" height="8px">
+                <use href="./images/sprite.svg#icon-close-tag"></use>
+              </svg>
+            </button>
+            <nav class="navigation">
+              <ul class="header-list list">
+                <li class="underline-item">
+                  <a
+                    href="./index.html"
+                    class="header-links link navigation-links underline studio-link"
+                    >Studio</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="./portfolio.html"
+                    class="header-links link navigation-links"
+                    rel="noreferrer noopener nofollower"
+                    >Portfolio</a
+                  >
+                </li>
+                <li>
+                  <a href="" class="header-links link navigation-links"
+                    >Contacts</a
+                  >
+                </li>
+              </ul>
+            </nav>
+            <div class="menu-lower-content">
+              <address class="address">
+                <ul class="list address-list">
+                  <li>
+                    <a
+                      href="mailto:info@devstudio.com"
+                      class="mail-tel header-links link mail"
+                      >info@devstudio.com</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="tel:+110001111111"
+                      class="mail-tel header-links link phone-number"
+                      >+11 (000) 111-11-11</a
+                    >
+                  </li>
+                </ul>
+              </address>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
     <main>
@@ -259,8 +271,8 @@
             <li class="employees">
               <img
                 srcset="
-                  ./images/second-worker.jpg    1x,
-                  ./images/second-worker-2x.jpg 2x
+                  ./images/third-worker.jpg    1x,
+                  ./images/third-worker-2x.jpg 2x
                 "
                 src="./images/third-worker.jpg"
                 alt="third-worker"
@@ -528,5 +540,6 @@
       </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

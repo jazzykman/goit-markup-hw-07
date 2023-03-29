@@ -53,6 +53,9 @@
     justify-content: center;
   }
   .desc-titles {
+    display: flex;
+    justify-content: start;
+
     font-weight: 500;
     line-height: 1.2;
     font-size: 20px;
