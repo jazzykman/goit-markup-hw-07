@@ -43,45 +43,65 @@
               </svg>
             </button>
             <nav class="navigation">
-              <ul class="header-list list">
-                <li class="underline-item">
-                  <a
-                    href="./index.html"
-                    class="header-links link navigation-links underline studio-link"
-                    >Studio</a
-                  >
+              <ul class="menu-list list">
+                <li class="underline-item menu-items">
+                  <a href="./index.html" class="link menu-links">Studio</a>
                 </li>
-                <li>
+                <li class="menu-items">
                   <a
                     href="./portfolio.html"
-                    class="header-links link navigation-links"
+                    class="link menu-links"
                     rel="noreferrer noopener nofollower"
                     >Portfolio</a
                   >
                 </li>
-                <li>
-                  <a href="" class="header-links link navigation-links"
-                    >Contacts</a
-                  >
+                <li class="menu-items">
+                  <a href="" class="link menu-links contacts">Contacts</a>
                 </li>
               </ul>
             </nav>
             <div class="menu-lower-content">
-              <address class="address">
-                <ul class="list address-list">
-                  <li>
-                    <a
-                      href="mailto:info@devstudio.com"
-                      class="mail-tel header-links link mail"
-                      >info@devstudio.com</a
+              <address class="mobile-address">
+                <ul class="list">
+                  <li class="number-margin">
+                    <a href="tel:+110001111111" class="menu-number"
+                      >+11 (000) 111-11-11</a
                     >
                   </li>
                   <li>
-                    <a
-                      href="tel:+110001111111"
-                      class="mail-tel header-links link phone-number"
-                      >+11 (000) 111-11-11</a
+                    <a href="mailto:info@devstudio.com" class="link menu-mail"
+                      >info@devstudio.com</a
                     >
+                  </li>
+                </ul>
+                <ul class="workers-menu list">
+                  <li class="media-items">
+                    <a class="link socials-links" href=""
+                      ><svg class="socials-icons" width="24" height="24">
+                        <use href="./images/sprite.svg#icon-instagram-2"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="media-items">
+                    <a class="link socials-links" href=""
+                      ><svg class="socials-icons" width="24" height="24">
+                        <use href="./images/sprite.svg#icon-twitter-1"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="media-items">
+                    <a class="link socials-links" href=""
+                      ><svg class="socials-icons" width="24" height="24">
+                        <use href="./images/sprite.svg#icon-facebook-1"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="media-items">
+                    <a class="link socials-links" href=""
+                      ><svg class="socials-icons" width="24" height="24">
+                        <use href="./images/sprite.svg#icon-linkedin-1"></use>
+                      </svg>
+                    </a>
                   </li>
                 </ul>
               </address>
@@ -89,7 +109,59 @@
           </div>
         </div>
       </div>
+      <div class="container header-container">
+        <div class="tab-desk-header">
+          <a href="./index.html" class="header-logo link"
+            ><span class="logo-first-part">Web</span>Studio</a
+          >
+
+          <nav class="navigation">
+            <ul class="header-list list">
+              <li class="underline-item">
+                <a
+                  href="./index.html"
+                  class="header-links link navigation-links underline studio-link"
+                  >Studio</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./portfolio.html"
+                  class="header-links link navigation-links"
+                  rel="noreferrer noopener nofollower"
+                  >Portfolio</a
+                >
+              </li>
+              <li>
+                <a href="" class="header-links link navigation-links"
+                  >Contacts</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <address class="address">
+            <ul class="list address-list">
+              <li>
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="mail-tel header-links link mail"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a
+                  href="tel:+110001111111"
+                  class="mail-tel header-links link phone-number"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+      </div>
     </header>
+
     <main>
       <!-- section 1  -->
       <section class="hero-section">
@@ -162,13 +234,27 @@
           <h2 class="introdution">What are we doing</h2>
           <ul class="list third-section-list">
             <li class="third-section-items">
-              <img src="./images/section2.jpg" alt="monitor" width="360" />
-            </li>
-            <li class="third-section-items">
-              <img src="./images/sect.2.jpg" alt="messenger" width="360" />
+              <img
+                srcset="../images/section2.jpg 1x, ./images/section-2-2x.jpg 2x"
+                src="./images/section2.jpg"
+                alt="monitor"
+                width="360"
+              />
             </li>
             <li class="third-section-items">
               <img
+                srcset="./images/sect.2.jpg 1x, ./images/sect.2-2x.jpg 2x"
+                src="./images/sect.2.jpg"
+                alt="messenger"
+                width="360"
+              />
+            </li>
+            <li class="third-section-items">
+              <img
+                srcset="
+                  ./images/section2photo.jpg    1x,
+                  ./images/section2photo-2x.jpg 2x
+                "
                 src="./images/section2photo.jpg"
                 alt="mobile-phone"
                 width="360"

@@ -6,6 +6,18 @@
     flex-direction: column;
     margin: 0;
   }
+  .menu-number {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 40px;
+    text-transform: capitalize;
+    color: #4d5ae5;
+  }
+  .workers-menu {
+    gap: 56px;
+  }
 }
 @media screen and (max-width: 479px) {
   .modal {

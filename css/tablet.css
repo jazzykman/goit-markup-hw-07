@@ -6,6 +6,17 @@
     flex-direction: column;
     margin: 0;
   }
+  .header-mobile {
+    display: none;
+  }
+  .tab-desk-header {
+    display: flex;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .mail-input {
     width: 264px;
   }
