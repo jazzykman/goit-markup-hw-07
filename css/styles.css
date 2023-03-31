@@ -174,7 +174,14 @@ img {
   display: block;
   margin-bottom: 48px;
 }
-
+.menu-studio {
+  display: block;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
 .navigation-links {
   font-weight: 500;
   color: #2e2f42;
@@ -307,6 +314,11 @@ img {
 .section-about {
   padding: 120px 0;
 }
+@media screen and (max-width: 1199px) {
+  .section-about {
+    padding: 96px 0px;
+  }
+}
 .strategy {
   display: none;
 }
@@ -427,7 +439,11 @@ img {
 }
 .our-team {
   background-color: #f4f4fd;
-  padding: 120px 0;
+}
+@media screen and (max-width: 767px) {
+  .our-team {
+    padding: 96px 0 128px;
+  }
 }
 .workers-items:not(:last-child) {
   margin-right: 24px;
@@ -447,9 +463,10 @@ img {
 .socials-links:hover {
   background-color: #404bbf;
 }
-
-.customers-section {
-  padding: 130px 0px 120px;
+@media screen and (max-width: 1199px) {
+  .customers-section {
+    padding: 96px 0;
+  }
 }
 .customers-title {
   font-weight: 700;
@@ -495,6 +512,11 @@ img {
 
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (max-width: 767px) {
+  .company-links {
+    width: 190px;
+  }
+}
 
 .company-links:focus .company-icons,
 .company-links:hover .company-icons {
@@ -505,10 +527,13 @@ img {
 .company-links:hover {
   border-color: #404bbf;
 }
+@media screen and (max-width: 1199px) {
+  .footer {
+    padding: 96px 0;
+  }
+}
 .footer {
   background: #2e2f42;
-  padding-bottom: 96px;
-  padding-top: 96px;
 }
 .footer-full-logo {
   font-family: "Raleway" sans-serif;

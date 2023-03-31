@@ -65,6 +65,9 @@
     margin-right: 24px;
     width: 264px;
   }
+  .our-team {
+    padding: 120px 0;
+  }
   .workers-list {
     display: flex;
     justify-content: center;
@@ -88,6 +91,12 @@
   }
   .company-item:not(:last-child) {
     margin-right: 24px;
+  }
+  .customers-section {
+    padding: 130px 0px 120px;
+  }
+  .footer {
+    padding: 100px 0;
   }
   .footer-div {
     display: flex;

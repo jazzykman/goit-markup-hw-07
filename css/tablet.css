@@ -90,7 +90,9 @@
     background-color: white;
     padding-bottom: 32px;
   }
-
+  .our-team {
+    padding: 96px 0 104px;
+  }
   .workers-media {
     gap: 16px;
   }
