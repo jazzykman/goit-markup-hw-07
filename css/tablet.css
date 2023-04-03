@@ -35,6 +35,18 @@
   .hamburger {
     display: none;
   }
+  .buttons-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .buttons:not(:last-child) {
+    margin-right: 24px;
+  }
+  .image-item {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero-section {
@@ -132,5 +144,22 @@
   .desc-titles {
     display: flex;
     justify-content: start;
+  }
+  .buttons-list {
+    margin-bottom: 64px;
+  }
+  .portfolio-section {
+    padding-bottom: 96px;
+    padding-top: 64px;
+  }
+  .images-list {
+    row-gap: 72px;
+    column-gap: 24px;
+  }
+  .image-item {
+    width: calc((100% - 24px) / 2);
+    border: 0.5px solid #f4f4fd;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   }
 }

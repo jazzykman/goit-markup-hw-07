@@ -27,6 +27,93 @@
   <body>
     <header class="header">
       <div class="container header-container">
+        <div class="header-mobile second-header-div">
+          <a href="./index.html" class="header-logo link"
+            ><span class="logo-first-part">Web</span>Studio</a
+          >
+          <button type="button" class="header-button js-open-menu">
+            <svg width="32" height="22" class="hamburger-svg">
+              <use href="./images/sprite.svg#icon-hamburger"></use>
+            </svg>
+          </button>
+          <div class="hamburger js-menu-container">
+            <button class="modal-button js-close-menu" id="mobile-menu">
+              <svg class="close-tag" width="8px" height="8px">
+                <use href="./images/sprite.svg#icon-close-tag"></use>
+              </svg>
+            </button>
+            <nav class="navigation">
+              <ul class="menu-list list">
+                <li class="underline-item menu-items">
+                  <a
+                    href="./index.html"
+                    class="menu-studio menu-studio-portfolio"
+                    >Studio</a
+                  >
+                </li>
+                <li class="menu-items">
+                  <a
+                    href="./portfolio.html"
+                    class="link menu-links menu-portfolio"
+                    rel="noreferrer noopener nofollower"
+                    >Portfolio</a
+                  >
+                </li>
+                <li class="menu-items">
+                  <a href="" class="link menu-links">Contacts</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="menu-lower-content">
+              <address class="mobile-address">
+                <ul class="list">
+                  <li class="number-margin">
+                    <a href="tel:+110001111111" class="menu-number"
+                      >+11 (000) 111-11-11</a
+                    >
+                  </li>
+                  <li>
+                    <a href="mailto:info@devstudio.com" class="link menu-mail"
+                      >info@devstudio.com</a
+                    >
+                  </li>
+                </ul>
+                <ul class="workers-menu list">
+                  <li class="media-items">
+                    <a class="link socials-links" href=""
+                      ><svg class="socials-icons" width="24" height="24">
+                        <use href="./images/sprite.svg#icon-instagram-2"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="media-items">
+                    <a class="link socials-links" href=""
+                      ><svg class="socials-icons" width="24" height="24">
+                        <use href="./images/sprite.svg#icon-twitter-1"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="media-items">
+                    <a class="link socials-links" href=""
+                      ><svg class="socials-icons" width="24" height="24">
+                        <use href="./images/sprite.svg#icon-facebook-1"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="media-items">
+                    <a class="link socials-links" href=""
+                      ><svg class="socials-icons" width="24" height="24">
+                        <use href="./images/sprite.svg#icon-linkedin-1"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </address>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container header-container">
         <div class="tab-desk-header">
           <a href="./index.html" class="header-logo link"
             ><span class="logo-first-part">Web</span>Studio</a
@@ -34,7 +121,7 @@
 
           <nav class="navigation">
             <ul class="header-list list">
-              <li class="underline-item">
+              <li>
                 <a
                   href="./index.html"
                   class="header-links link navigation-links"
@@ -105,7 +192,7 @@
                 <div class="portfolio-show">
                   <img
                     src="./images/portfolio-image-1.jpg"
-                    width="360"
+                    width="356"
                     height="300"
                     alt="photo with description"
                   />
@@ -333,7 +420,7 @@
         <div class="footer-socials">
           <p class="footer-above-media">Social media</p>
 
-          <ul class="workers-media list">
+          <ul class="workers-media list footer-icons">
             <li class="media-items">
               <a href class="link footer-links"
                 ><svg class="company-icons" width="24" height="24">
@@ -383,6 +470,67 @@
           </div>
         </form>
       </div>
+
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <form class="modal-form">
+            <p class="backdrop-title">
+              Leave your contacts and we will call you back
+            </p>
+
+            <label for="name" class="modal-label"
+              ><span class="modal-label-text">Name</span>
+              <input type="text" id="name" name="name" class="modal-input" />
+              <svg class="person-svg" width="18" height="18">
+                <use href="./images/sprite.svg#icon-person"></use>
+              </svg>
+            </label>
+
+            <label for="tel" class="modal-label"
+              ><span class="modal-label-text">Phone</span>
+              <input type="tel" id="tel" name="tel" class="modal-input" />
+              <svg class="person-svg" width="18" height="18">
+                <use href="./images/sprite.svg#icon-phone"></use>
+              </svg>
+            </label>
+
+            <label for="mail" class="modal-label"
+              ><span class="modal-label-text">Email</span>
+              <input type="email" id="mail" name="mail" class="modal-input" />
+              <svg class="person-svg" width="18" height="18">
+                <use href="./images/sprite.svg#icon-email"></use>
+              </svg>
+            </label>
+
+            <label for="comment" class="modal-label label-margin"
+              ><span class="modal-label-text">Comment</span>
+              <textarea
+                class="comment-field"
+                name="comment"
+                id="comment"
+                placeholder="Text-input"
+              ></textarea>
+            </label>
+
+            <input
+              type="checkbox"
+              id="checkbox"
+              name="checkbox"
+              class="privacy-input visually-hidden"
+            />
+            <label for="checkbox" class="privacy-label">
+              I accept the terms and conditions of the &nbsp;<a
+                href=""
+                class="privacy-link"
+                >Privacy Policy</a
+              ></label
+            >
+
+            <button type="submit" class="send-button">Send</button>
+          </form>
+        </div>
+      </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

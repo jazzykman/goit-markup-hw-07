@@ -120,4 +120,22 @@
   .subscribe-button {
     margin-left: 24px;
   }
+  .portfolio-section {
+    padding-bottom: 120px;
+    padding-top: 96px;
+  }
+  .buttons-list {
+    margin-bottom: 72px;
+  }
+  .images-list {
+    column-gap: 24px;
+    row-gap: 48px;
+  }
+  .image-item {
+    display: flex;
+    border-top: none;
+    border: 1px solid #e7e9fc;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+    width: calc((100% - 48px) / 3);
+  }
 }
